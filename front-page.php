@@ -9,7 +9,7 @@ get_header();
 ?>
 	<!-- Hero -->
 	<div class="hero">
-		<div class="container">
+		<div class="container hero__container">
 			<div class="row hero__row">
 				<div class="col-12 col-md-6 hero__text-container">
 					<h1 class="hero__title mb-0">DESARROLLADOR WordPress</h1>
