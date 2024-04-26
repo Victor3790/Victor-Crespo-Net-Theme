@@ -4,35 +4,46 @@
 * Author URI: https://victorcrespo.net
 */
 
+html {
+  scroll-behavior: smooth; }
+
 .container {
-    min-width: 390px; }
-  
+  min-width: 390px; }
+
+.section {
+  margin-top: 30px; }
+
+.title {
+  color: #032253;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.button {
+  padding: 10px 20px;
+  background-color: #fcb700;
+  color: #032253;
+  border-radius: 5px;
+  text-align: center; }
+
+a.button {
+  text-decoration: none; }
+
+a.button:hover {
+  color: #032253; }
+
+.footer {
+  background-color: #032253;
+  color: #f3f3f3;
+  min-width: 390px; }
+
+@media (min-width: 768px) {
   .section {
-    margin-top: 30px; }
-  
-  .title {
-    color: #032253;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-bottom: 30px; }
-  
-  .button {
-    padding: 10px 20px;
-    background-color: #fcb700;
-    color: #032253;
-    border-radius: 5px;
-    text-align: center; }
-  
-  .footer {
-    background-color: #032253;
-    color: #f3f3f3;
-    min-width: 390px; }
-  
-  @media (min-width: 768px) {
-    .section {
-      margin-top: 35px; } }
-  
-  @media (min-width: 1200px) {
-    .section {
-      margin-top: 60px; } }
+    margin-top: 35px; } }
+
+@media (min-width: 1200px) {
+  .section {
+    margin-top: 60px; } }
+
+
   
