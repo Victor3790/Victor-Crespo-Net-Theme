@@ -21,8 +21,11 @@ if ( ! defined( 'VCNT_URI' ) ) {
 
 // Define version.
 if ( ! defined( 'VCNT_VER' ) ) {
-	define( 'VCNT_VER', '0.0.1' );
+	define( 'VCNT_VER', '1.0.0' );
 }
+
+// Title tag support.
+add_theme_support( 'title-tag' );
 
 add_action( 'wp_enqueue_scripts', 'vcnt_load_assets' );
 
