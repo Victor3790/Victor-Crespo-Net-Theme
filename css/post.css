@@ -5,7 +5,7 @@ h3 {
   margin-top: 40px; }
 
 .post__title-container {
-  background-color: #032253;
+  background-color: var(--blue);
   padding-top: 80px;
   padding-bottom: 80px;
   margin-bottom: 35px;
@@ -13,7 +13,7 @@ h3 {
 
 .post__title {
   font-size: 2.5rem;
-  color: #f3f3f3; }
+  color: var(--white); }
 
 @media (min-width: 768px) {
   .post__title {

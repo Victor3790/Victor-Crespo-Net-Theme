@@ -65,3 +65,132 @@ function vcnt_load_assets() {
 		);
 	}
 }
+
+add_action( 'wp_footer', 'vcnt_add_animation_scripts' );
+
+/**
+ * Add animations script on home page
+ */
+function vcnt_add_animation_scripts() {
+	if ( is_front_page() ) {
+		?>
+		<script id="home-animations">
+			let options = {
+				root: null,
+				rootMargin: "0px",
+				threshold: 1.0,
+			};
+
+			/*** Hero animations ***/
+			let wpLogo = document.querySelector('.hero__pic');
+
+			window.addEventListener("DOMContentLoaded", (e) => {
+				wpLogo.classList.add('animate');
+			});
+
+			/*** About animations ***/
+			let me = document.querySelector('.about__pic');
+
+			let mePicDrawn = false;
+			let mePicObserver = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if(entry.isIntersecting && !mePicDrawn) {
+							// Show pic
+							me.classList.add('animate');
+						}
+					});
+				},
+				options
+			).observe(document.querySelector('.about__pic-container'));
+
+			/*** Services animations ***/
+			// Paths
+			let pluginPaths = document.querySelectorAll('#plugin-icon path');
+			let themePaths = document.querySelectorAll('#theme-icon path');
+			let themeCircle = document.querySelectorAll('#theme-icon circle');
+			let blockPaths = document.querySelectorAll('#block-icon path');
+
+			themeCircle[0].style.visibility = 'hidden';
+			initSvgPaths(pluginPaths);
+			initSvgPaths(themePaths);
+			initSvgPaths(blockPaths);
+
+			let themeIconDrawn = false;
+			let themeObserver = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if(entry.isIntersecting && !themeIconDrawn) {
+							// Draw the icon
+							themeCircle[0].style.visibility = 'visible';
+							fillSvgPaths(themePaths);
+							themeIconDrawn = true;
+						}
+					});
+				},
+				options
+			).observe(document.querySelector('#theme-icon-container'));
+
+			let pluginIconDrawn = false;
+			let pluginObserver = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if(entry.isIntersecting && !pluginIconDrawn) {
+							// Draw the icon
+							fillSvgPaths(pluginPaths);
+							pluginIconDrawn = true;
+						}
+					});
+				},
+				options
+			).observe(document.querySelector('#plugin-icon-container'));
+
+			let blockIconDrawn = false;
+			let blockObserver = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if(entry.isIntersecting && !blockIconDrawn) {
+							// Draw the icon
+							fillSvgPaths(blockPaths);
+							blockIconDrawn = true;
+						}
+					});
+				},
+				options
+			).observe(document.querySelector('#block-icon-container'));
+
+			function initSvgPaths(paths) {
+				paths.forEach((path) => {
+					let pathLength = path.getTotalLength();
+
+					path.style.strokeDasharray = pathLength;
+					path.style.strokeDashoffset = pathLength;
+				});
+			}
+
+			function fillSvgPaths(paths) {
+
+				paths.forEach((path, index, listObj) => {
+					let fillpercentage = 0;
+
+					const intervalId = setInterval(() => {
+						if (fillpercentage > 1) {
+							clearInterval(intervalId); // Stop the interval once the fillpercentage exceeds 1
+						} else {
+
+							let pathLength = path.getTotalLength();
+
+							path.style.strokeDasharray = pathLength;
+
+							let drawLength = pathLength * fillpercentage;
+
+							path.style.strokeDashoffset = pathLength - drawLength;
+							fillpercentage += 0.1; // Increment the fillpercentage by 0.1
+						}
+					}, 90); 
+				});
+			}
+		</script>
+		<?php
+	}
+}
