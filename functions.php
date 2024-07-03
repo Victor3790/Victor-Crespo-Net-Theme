@@ -24,8 +24,23 @@ if ( ! defined( 'VCNT_VER' ) ) {
 	define( 'VCNT_VER', '1.0.0' );
 }
 
-// Title tag support.
-add_theme_support( 'title-tag' );
+add_action( 'after_setup_theme', 'vcnt_setup' );
+
+/**
+ * Add theme support for special features and menus.
+ */
+function vcnt_setup() {
+
+	// Title tag support.
+	add_theme_support( 'title-tag' );
+
+	// Main menu.
+	register_nav_menus(
+		array(
+			'menu-1' => 'Primary',
+		)
+	);
+}
 
 add_action( 'wp_enqueue_scripts', 'vcnt_load_assets' );
 
@@ -85,7 +100,9 @@ function vcnt_add_animation_scripts() {
 			let wpLogo = document.querySelector('.hero__pic');
 
 			window.addEventListener("DOMContentLoaded", (e) => {
-				wpLogo.classList.add('animate');
+				setTimeout(()=>{
+					wpLogo.classList.add('animate');
+				}, 900);
 			});
 
 			/*** About animations ***/
@@ -159,6 +176,45 @@ function vcnt_add_animation_scripts() {
 				options
 			).observe(document.querySelector('#block-icon-container'));
 
+			/*** Testimonials animation ***/
+			let testimonialsPaths = document.querySelectorAll('#testimonials-icon path');
+
+			initSvgPaths(testimonialsPaths);
+
+			let testimonialsIconDrawn = false;
+			let testimonialsObserver = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if(entry.isIntersecting && !testimonialsIconDrawn) {
+							// Draw the icon
+							fillSvgPaths(testimonialsPaths);
+							testimonialsIconDrawn = true;
+						}
+					});
+				},
+				options
+			).observe(document.querySelector('#testimonials-icon-container'));
+
+			/*** Contact animation ***/
+			let contactPaths = document.querySelectorAll('#contact-icon path');
+
+			initSvgPaths(contactPaths);
+
+			let contactIconDrawn = false;
+			let contactObserver = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if(entry.isIntersecting && !contactIconDrawn) {
+							// Draw the icon
+							fillSvgPaths(contactPaths);
+							contactIconDrawn = true;
+						}
+					});
+				},
+				options
+			).observe(document.querySelector('#contact-icon-container'));
+
+			/*** Functions ***/
 			function initSvgPaths(paths) {
 				paths.forEach((path) => {
 					let pathLength = path.getTotalLength();

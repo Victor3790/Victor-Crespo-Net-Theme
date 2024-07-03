@@ -38,6 +38,13 @@ html {
   font-weight: bolder;
   z-index: 9999; }
 
+.menu__link {
+  text-decoration: none;
+  color: var(--white);}
+
+.menu__link:hover{
+  color: var(--white);}
+
 .menu__list {
   list-style: none; }
 
