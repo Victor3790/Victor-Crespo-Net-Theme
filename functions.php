@@ -79,6 +79,15 @@ function vcnt_load_assets() {
 			VCNT_VER
 		);
 	}
+
+	if ( is_home() ) {
+		wp_enqueue_style(
+			'vcnt-archive',
+			VCNT_URI . '/css/archive.css',
+			array( 'vcnt-style' ),
+			VCNT_VER
+		);
+	}
 }
 
 add_action( 'wp_footer', 'vcnt_add_animation_scripts' );
