@@ -31,7 +31,6 @@ get_header();
 								<?php the_category( ' / ' ); ?> /
 								<span><?php the_title(); ?></span>
 							</div>
-							<img class="mb-5" style="display: block; width: 100%;" src="img/post.png">
 							<?php the_content(); ?>
 						</div>
 						<div class="col-12 col-lg-3">
