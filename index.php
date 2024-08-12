@@ -28,7 +28,7 @@ get_header();
 						<div class="col-12 col-lg-9">
 							<div class="post__breadcrumbs mb-3">
 								<a class="post__breadcrumbs-link" href="<?php echo esc_url( home_url() ); ?>">Home</a> /
-								<?php the_category( ' / ' ); ?> /
+								<?php the_category( ' / ', 'multiple' ); ?> /
 								<span><?php the_title(); ?></span>
 							</div>
 							<?php the_content(); ?>
