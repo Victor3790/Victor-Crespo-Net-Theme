@@ -25,8 +25,17 @@ get_header();
 				<!-- Content -->
 				<div class="container">
 					<div class="row">
-						<div class="col">
+						<div class="col-12 col-lg-9">
+							<div class="post__breadcrumbs mb-3">
+								<a class="post__breadcrumbs-link" href="<?php echo esc_url( home_url() ); ?>">Home</a> /
+								<?php the_category( ' / ' ); ?> /
+								<span><?php the_title(); ?></span>
+							</div>
+							<img class="mb-5" style="display: block; width: 100%;" src="img/post.png">
 							<?php the_content(); ?>
+						</div>
+						<div class="col-12 col-lg-3">
+							<?php get_template_part( 'template-parts/post-categories-sidebar' ); ?>
 						</div>
 					</div>
 				</div>

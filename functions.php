@@ -80,7 +80,7 @@ function vcnt_load_assets() {
 		);
 	}
 
-	if ( is_home() ) {
+	if ( is_home() || is_archive() ) {
 		wp_enqueue_style(
 			'vcnt-archive',
 			VCNT_URI . '/css/archive.css',
@@ -258,4 +258,15 @@ function vcnt_add_animation_scripts() {
 		</script>
 		<?php
 	}
+}
+
+add_filter( 'the_category', 'vcnt_add_css_class_to_categories' );
+
+/**
+ * Add post__breadcrumbs-link css class to category link.
+ *
+ * @param string $categories The html anchor category list.
+ */
+function vcnt_add_css_class_to_categories( $categories ) {
+	return str_replace( '<a ', '<a class="post__breadcrumbs-link " ', $categories );
 }

@@ -15,6 +15,33 @@ h3 {
   font-size: 2.5rem;
   color: var(--white); }
 
+.sidebar {
+  background-color: var(--white); }
+
+.sidebar__title {
+  color: var(--blue);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-left: 3px solid var(--yellow);
+  padding-left: 10px; }
+
+.sidebar__link {
+  text-decoration: none;
+  color: #000; }
+
+.post__breadcrumbs {
+  font-size: 14px;
+  color: var(--gray); }
+
+.post__breadcrumbs-link {
+  text-decoration: none;
+  color: var(--gray); }
+
+.post__breadcrumbs-link:hover {
+  color: var(--gray); }
+
 @media (min-width: 768px) {
   .post__title {
     font-size: 3rem; } }
