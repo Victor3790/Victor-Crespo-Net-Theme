@@ -87,6 +87,13 @@ function vcnt_load_assets() {
 			array( 'vcnt-style' ),
 			VCNT_VER
 		);
+
+		wp_enqueue_style(
+			'vcnt-sidebar',
+			VCNT_URI . '/css/sidebar.css',
+			array( 'vcnt-style' ),
+			VCNT_VER
+		);
 	}
 }
 

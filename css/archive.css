@@ -1,7 +1,5 @@
 /*** Individual posts ***/
 .post {
-  max-width: 300px;
-  margin: 0 auto;
   margin-bottom: 50px; }
 
 .post__title {
@@ -14,10 +12,8 @@
   color: #000;
   text-decoration: underline; }
 
-.post__thumbnail {
-  display: block;
-  width: 100%;
-  max-width: 300px; }
+.post__excerpt {
+  font-size: 0.9rem; }
 
 /*** Pagination ***/
 .page {
