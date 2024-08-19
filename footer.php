@@ -13,12 +13,13 @@
 				<div class="col-12 col-md-6">
 					<div class="row">
 						<div class="col">
-							<h4 class="title footer__title white-text">Sígueme</h4>
+							<h2 class="title footer__title white-text">Sígueme</h2>
 						</div>
 					</div>
 					<a class="footer__icon-link" href="https://www.linkedin.com/in/desarrollador-wordpress-freelance-victor-crespo" target="_blank">
 						<svg class="footer__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 						viewBox="-143 145 512 512" xml:space="preserve">
+							<title>Linkedin</title>
 							<g>
 								<path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7
 									c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4
@@ -36,6 +37,7 @@
 					<a class="footer__icon-link" href="https://github.com/Victor3790" target="_blank">
 						<svg class="footer__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 						viewBox="-143 145 512 512" xml:space="preserve">
+							<title>Github</title>
 							<g>
 								<path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7
 									c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4
@@ -60,6 +62,7 @@
 					<a class="footer__icon-link" href="https://www.youtube.com/@victorcrespo18" target="_blank">
 						<svg class="footer__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 						viewBox="-143 145 512 512" xml:space="preserve">
+							<title>Youtube</title>
 							<g>
 								<path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7
 									c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4

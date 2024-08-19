@@ -13,7 +13,7 @@ get_header();
 			<div class="row hero__row">
 				<div class="col-12 col-md-6 order-2 order-md-1 hero__text-container mb-5 mb-md-0">
 					<h1 class="hero__title mb-0">Desarrollador WordPress</h1>
-					<h4 class="hero__subtitle my-4 my-md-3">Victor Crespo</h4>
+					<h2 class="hero__subtitle my-4 my-md-3">Victor Crespo</h2>
 					<p class="mb-4 mb-md-3">
 						Si bien en internet existen una gran cantidad plugins y temas para WordPress,
 						hay necesidades muy especificas que estos no logran cubrir
