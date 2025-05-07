@@ -81,6 +81,11 @@ a.button:hover {
 .footer__icon-link {
   text-decoration: none; }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 @media (min-width: 768px) {
   .section {
     margin-top: 35px; } }
