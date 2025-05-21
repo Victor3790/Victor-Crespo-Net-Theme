@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="col-12 col-md-6">
 					<div class="row">
 						<div class="col">
-							<h2 class="title footer__title white-text">Sígueme</h2>
+							<h2 class="title footer__title white-text"><?php esc_html_e( 'Follow me', 'vcnt' ); ?></h2>
 						</div>
 					</div>
 					<a class="footer__icon-link" href="https://www.linkedin.com/in/desarrollador-wordpress-freelance-victor-crespo" target="_blank">

@@ -2,7 +2,7 @@
 /**
  * The main functions file
  *
- * @package victor-crespo-net-theme
+ * @package vcnt
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -40,6 +40,9 @@ function vcnt_setup() {
 			'menu-1' => 'Primary',
 		)
 	);
+
+	// Load theme text domain.
+	load_theme_textdomain( 'vcnt', VCNT_DIR . '/languages' );
 }
 
 add_action( 'wp_enqueue_scripts', 'vcnt_load_assets' );
@@ -292,20 +295,20 @@ add_action( 'init', 'vcnt_register_projects_cpt' );
  */
 function vcnt_register_projects_cpt() {
 	$labels = array(
-		'name'               => _x( 'Projects', 'post type general name', 'victor-crespo-net-theme' ),
-		'singular_name'      => _x( 'Project', 'post type singular name', 'victor-crespo-net-theme' ),
-		'menu_name'          => _x( 'Projects', 'admin menu', 'victor-crespo-net-theme' ),
-		'name_admin_bar'     => _x( 'Project', 'add new on admin bar', 'victor-crespo-net-theme' ),
-		'add_new'            => _x( 'Add New', 'project', 'victor-crespo-net-theme' ),
-		'add_new_item'       => __( 'Add New Project', 'victor-crespo-net-theme' ),
-		'new_item'           => __( 'New Project', 'victor-crespo-net-theme' ),
-		'edit_item'          => __( 'Edit Project', 'victor-crespo-net-theme' ),
-		'view_item'          => __( 'View Project', 'victor-crespo-net-theme' ),
-		'all_items'          => __( 'All Projects', 'victor-crespo-net-theme' ),
-		'search_items'       => __( 'Search Projects', 'victor-crespo-net-theme' ),
-		'parent_item_colon'  => __( 'Parent Projects:', 'victor-crespo-net-theme' ),
-		'not_found'          => __( 'No projects found.', 'victor-crespo-net-theme' ),
-		'not_found_in_trash' => __( 'No projects found in Trash.', 'victor-crespo-net-theme' ),
+		'name'               => _x( 'Projects', 'post type general name', 'vcnt' ),
+		'singular_name'      => _x( 'Project', 'post type singular name', 'vcnt' ),
+		'menu_name'          => _x( 'Projects', 'admin menu', 'vcnt' ),
+		'name_admin_bar'     => _x( 'Project', 'add new on admin bar', 'vcnt' ),
+		'add_new'            => _x( 'Add New', 'project', 'vcnt' ),
+		'add_new_item'       => __( 'Add New Project', 'vcnt' ),
+		'new_item'           => __( 'New Project', 'vcnt' ),
+		'edit_item'          => __( 'Edit Project', 'vcnt' ),
+		'view_item'          => __( 'View Project', 'vcnt' ),
+		'all_items'          => __( 'All Projects', 'vcnt' ),
+		'search_items'       => __( 'Search Projects', 'vcnt' ),
+		'parent_item_colon'  => __( 'Parent Projects:', 'vcnt' ),
+		'not_found'          => __( 'No projects found.', 'vcnt' ),
+		'not_found_in_trash' => __( 'No projects found in Trash.', 'vcnt' ),
 	);
 
 	$args = array(
@@ -336,7 +339,7 @@ add_action( 'add_meta_boxes', 'vcnt_add_projects_meta_boxes' );
 function vcnt_add_projects_meta_boxes() {
 	add_meta_box(
 		'vcnt_github_link',
-		__( 'GitHub Link', 'victor-crespo-net-theme' ),
+		__( 'GitHub Link', 'vcnt' ),
 		'vcnt_render_github_link_meta_box',
 		'project',
 		'normal',
@@ -345,7 +348,7 @@ function vcnt_add_projects_meta_boxes() {
 
 	add_meta_box(
 		'vcnt_wordpress_org_link',
-		__( 'WordPress.org Link', 'victor-crespo-net-theme' ),
+		__( 'WordPress.org Link', 'vcnt' ),
 		'vcnt_render_wordpress_org_link_meta_box',
 		'project',
 		'normal',
@@ -362,7 +365,7 @@ function vcnt_render_github_link_meta_box( $post ) {
 	$value = get_post_meta( $post->ID, '_vcnt_github_link', true );
 	wp_nonce_field( 'vcnt_save_github_link', 'vcnt_github_link_nonce' );
 	?>
-	<label for="vcnt_github_link"><?php esc_html_e( 'GitHub Repository URL:', 'victor-crespo-net-theme' ); ?></label>
+	<label for="vcnt_github_link"><?php esc_html_e( 'GitHub Repository URL:', 'vcnt' ); ?></label>
 	<input type="url" id="vcnt_github_link" name="vcnt_github_link" value="<?php echo esc_attr( $value ); ?>" style="width: 100%;" />
 	<?php
 }
@@ -376,7 +379,7 @@ function vcnt_render_wordpress_org_link_meta_box( $post ) {
 	$value = get_post_meta( $post->ID, '_vcnt_wordpress_org_link', true );
 	wp_nonce_field( 'vcnt_save_wordpress_org_link', 'vcnt_wordpress_org_link_nonce' );
 	?>
-	<label for="vcnt_wordpress_org_link"><?php esc_html_e( 'WordPress.org Plugin/Theme URL:', 'victor-crespo-net-theme' ); ?></label>
+	<label for="vcnt_wordpress_org_link"><?php esc_html_e( 'WordPress.org Plugin/Theme URL:', 'vcnt' ); ?></label>
 	<input type="url" id="vcnt_wordpress_org_link" name="vcnt_wordpress_org_link" value="<?php echo esc_attr( $value ); ?>" style="width: 100%;" />
 	<?php
 }

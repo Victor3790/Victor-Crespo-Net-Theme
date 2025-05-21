@@ -19,7 +19,7 @@ $recent_posts = wp_get_recent_posts(
 ?>
 
 <div class="sidebar pt-1 pb-1 ps-1 mb-3">
-	<h3 class="sidebar__title">Entradas recientes</h3>
+	<h3 class="sidebar__title"><?php esc_html_e( 'Recent Posts', 'vcnt' ); ?></h3>
 	<ul>
 		<?php foreach ( $recent_posts as $recent_post ) : ?>
 			<li>

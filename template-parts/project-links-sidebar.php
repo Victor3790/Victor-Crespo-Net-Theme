@@ -15,7 +15,7 @@ $wp_org_url = get_post_meta( get_the_ID(), '_vcnt_wordpress_org_link', true );
 ?>
 
 <div class="sidebar pt-1 pb-1 ps-1">
-	<h3 class="sidebar__title">Enlaces</h3>
+	<h3 class="sidebar__title"><?php esc_html_e( 'Links', 'vcnt' ); ?></h3>
 	<div class="d-flex justify-content-sm-start justify-content-lg-center mb-3">
 		<?php if ( ! empty( $github_url ) ) : ?>
 			<a class="ms-4 ms-lg-0 me-3" href="<?php echo esc_url( $github_url ); ?>" target="_blank">

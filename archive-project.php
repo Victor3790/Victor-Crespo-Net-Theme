@@ -23,12 +23,12 @@ get_header();
 								<p class="post__excerpt">
 									<?php the_excerpt(); ?>
 								</p>
-								<a href="<?php the_permalink(); ?>">Leer más</a>
+								<a href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read more', 'vcnt' ); ?></a>
 							</div>
 					<?php endwhile; ?>
 					<?php get_template_part( 'template-parts/pagination' ); ?>
 				<?php else : ?>
-					<h1>No Posts Found</h1>
+					<h1><?php esc_html_e( 'No posts found', 'vcnt' ); ?></h1>
 				<?php endif; ?>
 			</div>
 			<div class="col-12 col-lg-3">

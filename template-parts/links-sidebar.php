@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="sidebar pt-1 pb-1 ps-1 mb-3">
-	<h3 class="sidebar__title">Enlaces</h3>
+	<h3 class="sidebar__title"><?php esc_html_e( 'Links', 'vcnt' ); ?></h3>
 	<div class="d-flex justify-content-sm-start justify-content-lg-center mb-3">
 		<a class="icon-link ms-4 ms-lg-0 me-3" href="https://www.linkedin.com/in/desarrollador-wordpress-freelance-victor-crespo" target="_blank">
 			<svg class="icon icon--small icon--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 

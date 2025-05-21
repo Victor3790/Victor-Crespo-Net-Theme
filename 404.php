@@ -15,9 +15,9 @@ get_header();
 	<div class="container" style="min-height: 100vh; padding-top: 100px;">
 		<div class="row mt-5">
 			<div class="col" style="text-align: center;">
-				<h1 class="mt-5">Página no encontrada</h1>
-				<p>La página a la que estás tratando de acceder no existe.</p>
-				<a href="<?php echo esc_url( home_url() ); ?>">Ir a inicio</a>
+				<h1 class="mt-5"><?php esc_html_e( 'Page not found', 'vcnt' ); ?></h1>
+				<p><?php esc_html_e( 'The page you are trying to access does not exist', 'vcnt' ); ?></p>
+				<a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html_e( 'Home', 'vcnt' ); ?></a>
 			</div>
 		</div>
 	</div>
