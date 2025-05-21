@@ -18,15 +18,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<h1 class="hero__title mb-0">WordPress Developer</h1>
 					<h2 class="hero__subtitle my-4 my-md-3">Victor Crespo</h2>
 					<p class="mb-4 mb-md-3">
-						was de marer sis to play
-						Si bien en internet existen una gran cantidad plugins y temas para WordPress,
-						hay necesidades muy especificas que estos no logran cubrir
-						o que no lo hacen de la mejor manera. A lo largo de mi carrera como desarrollador WordPress he logrado crear
-						soluciones para satisfacer este tipo de requerimientos. 
-						Conoce más sobre mi experiencia profesional.
+						While there are a large number of plugins and themes for WordPress available online, 
+						there are very specific needs that these don't quite cover or don't address 
+						in the best way. 
+						Throughout my career as a WordPress developer, 
+						I've been able to create solutions to meet these kinds of requirements. 
+						Learn more about my professional experience.
 					</p>
 					<a href="#about-section" class="button hero__cta">
-					Saber más
+						About me
 					</a>
 				</div>
 				<div class="col-12 col-md-6 order-1 order-md-2 hero__pic-container">
@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="title">Sobre mí</h2>
+					<h2 class="title">About me</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -65,17 +65,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>
 				<div class="col-12 col-md-9 about__text-container">
 					<p>
-					Mi nombre es Víctor Hugo Escareño Crespo, soy <b>desarrollador web especializado en WordPress</b>. 
-					Llevo poco más de cinco años trabajando con este administrador de contenido,
-					realizando mejoras a sitios ya existentes y desarrollando webs desde cero así como temas y plugins
-					personalizados.
+						My name is Víctor Hugo Escareño Crespo, and I'm a web developer specialized in WordPress. 
+						I've been working with this content management system since 2019, improving existing 
+						websites and building new ones from scratch, I've also developed custom themes and plugins.
 					</p>
 					<p>
-					Como profesional de WordPress, mi enfoque está puesto en adaptar los recursos de este CMS 
-					para dar solución a necesidades muy especificas. Desde 
-					simples cambios visuales, hasta conexiones entre WordPress y plataformas de terceros 
-					por medio de APIS. Todo con la finalidad de eficientar y mejorar los procesos de las empresas y clientes con 
-					los que trabajo, ayudandoles a alcanzar sus objetivos de negocio y brindando el soporte necesario en todo momento.
+						As a WordPress professional, my focus is on adapting the resources of this CMS to meet 
+						very specific needs. From simple visual changes to integrating WordPress with third-party 
+						platforms through APIs, everything is aimed at streamlining and improving the processes of 
+						the companies and clients I work with. I help them achieve their business goals 
+						while providing the necessary support every step of the way.
 					</p>
 				</div>
 			</div>
@@ -86,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="title">Servicios</h2>
+					<h2 class="title">Services</h2>
 					<div class="row">
 						<div id="theme-icon-container" class="col-12 col-md-4">
 							<svg id="theme-icon" class="home-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,9 +93,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 								<path d="M19.9999 17.6001L17.7764 15.599C16.7368 14.6634 15.1887 14.5702 14.0445 15.3744L13.7463 15.5839C12.9511 16.1428 11.8693 16.0491 11.1821 15.3618L6.89237 11.0721C6.03616 10.2159 4.66274 10.1702 3.75147 10.9675L2.28101 12.2542" stroke="#1C274C" stroke-width="1" stroke-linecap="round"/>
 								<path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#1C274C" stroke-width="1" stroke-linecap="round"/>
 							</svg>
-							<h3 class="mb-2 services__title">Temas personalizados</h3>
+							<h3 class="mb-2 services__title">Custom Themes</h3>
 							<p class="services__text">
-							Creación de temas para WordPress desde cero. Modificación de temas hijo (estilos y funcionalidad según se necesite).
+								Creation of custom themes for WordPress, tailored to the specific needs of each client.
 							</p>
 						</div>
 						<div id="plugin-icon-container" class="col-12 col-md-4 mt-5 mt-md-0">
@@ -106,9 +105,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 								<path d="M13.5 11V9" stroke="#1C274C" stroke-width="1" stroke-linecap="round"/>
 								<path d="M10.5 11V9" stroke="#1C274C" stroke-width="1" stroke-linecap="round"/>
 							</svg>
-							<h3 class="mb-2 services__title">Plugins a medida</h3>
+							<h3 class="mb-2 services__title">Custom Plugins</h3>
 							<p class="services__text">
-							Creación de plugins para WordPress según necesidades específicas. Adaptación de funcionalidad de plugins existentes.
+								Creation of custom plugins for WordPress according to specific needs. Adaptation of existing plugin functionality.
 							</p>
 						</div>
 						<div id="block-icon-container" class="col-12 col-md-4 mt-5 mt-md-0">
@@ -118,9 +117,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 								<path d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15" stroke="#1C274C" stroke-width="1" stroke-linecap="round"/>
 								<path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#1C274C" stroke-width="1" stroke-linecap="round"/>
 							</svg>
-							<h3 class="mb-2 services__title">Bloques Gutenberg</h3>
+							<h3 class="mb-2 services__title">Gutenberg Blocks</h3>
 							<p class="services__text">
-							Creación de bloques de Gutenberg para WordPress, ideal si se necesita modificar aspectos de la web de manera constante
+								Creation of custom blocks for the WordPress Gutenberg editor. Adaptation of existing block functionality.
 							</p>
 						</div>
 					</div>
@@ -129,7 +128,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="row">
 				<div class="col">
 					<a href="<?php echo esc_url( get_post_type_archive_link( 'project' ) ); ?>" class="button testimonials__cta">
-						Portafolio
+						Portfolio
 					</a>
 				</div>
 			</div>
@@ -140,7 +139,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h2 class="title">Testimonios</h2>
+				<h2 class="title">Testimonials</h2>
 			</div>
 		</div>
 		<div class="row mb-3">
@@ -152,39 +151,38 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<div class="col-12 col-md-10 d-flex justify-content-center align-items-center">
 				<p>
-					A lo largo de mi trayectoria como desarrollador WordPresshe tenido la oportunidad de 
-					trabajar con diversos clientes que han confiado en mi experiencia para desarrollar y 
-					mejorar sus sitios web. Sus comentarios y experiencias son testimonio de la calidad y 
-					dedicación que pongo en cada proyecto. A continuación, te comparto algunos testimonios 
-					de clientes satisfechos que han visto cómo sus necesidades específicas fueron atendidas 
-					con soluciones efectivas y personalizadas, recibiendo soporte a lo largo de todo el proyecto.
+					Throughout my career as a WordPress developer, I've had the opportunity to work with a variety of clients 
+					who have trusted my expertise to develop and improve their websites. Their feedback and experiences are a 
+					testament to the quality and dedication I bring to every project. Below, I'm sharing some testimonials 
+					from satisfied clients who saw their specific needs addressed with effective, personalized solutions, 
+					and who received continuous support throughout the entire project.
 				</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 col-md-4">
 				<p class="testimonials__text">
-					"Víctor ha sido una persona muy atenta y paciente en todo momento. Además se ha preocupado por resolverme todas las dudas y solucionar los imprevistos que han surgido durante todo el proyecto. Lo recomiendo 100%"
+					"I worked with Victor for more than 18 months. He is honest, flexible and hard working. He has good communication skills and always seeking to deliver according to expectations. Keep on going!"
 				</p>
-				<p class="testimonials__name">José Pozo</p>
+				<p class="testimonials__name">Gabriel Jenik</p>
 			</div>
 			<div class="col-12 col-md-4 mt-4 mt-md-0">
 				<p class="testimonials__text">
-					"Víctor es un desarrollador con gran capacidad para resolver los detalles que se presentan, cuenta con la paciencia y disposición para cumplir con todos los objetivos del proyecto. Es un placer conocer profesionales como Víctor."
+					"I highly recommend Victor as a pivotal member of any team that values his key strengths, high-quality troubleshooting skills, as well as attention to detail and kind characteristics."
 				</p>
-				<p class="testimonials__name">Luis Llamas</p>
+				<p class="testimonials__name">Melina Von Hacht</p>
 			</div>
 			<div class="col-12 col-md-4 mt-4 mt-md-0">
 				<p class="testimonials__text">
-					"Gran trabajo de un gran profesional, transparenta su trabajo y muestra los avances claramente. Siempre es un placer encontrar personas así de comprometidas con cada proyecto. Super recomendable!"
+					"Great work from a great professional. He's transparent about his process and clearly shows progress. It's always a pleasure to find people this committed to each project. Highly recommended!"
 				</p>
 				<p class="testimonials__name">Carlos Esparragoza</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<a href="https://www.workana.com/freelancer/3dc268b9393c6e168b4d194e147c4a46" target="blank" class="button testimonials__cta">
-					Más testimonios
+				<a href="https://www.linkedin.com/in/desarrollador-wordpress-freelance-victor-crespo/" target="blank" class="button testimonials__cta">
+					More
 				</a>
 			</div>
 		</div>
@@ -195,7 +193,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h2 class="title">Contacto</h2>
+				<h2 class="title">Contact</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -207,7 +205,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<div class="col-12 col-md-10">
 				<p>
-					¿Hay alguna necesidad específica que no has podido cubrir con los plugins y temas disponibles para WordPress? ¿O tienes en mente alguna mejora particular para tu sitio web que te gustaría implementar? Estoy aquí para ayudarte a crear soluciones personalizadas y efectivas. Estoy disponible para responder cualquier pregunta y explorar cómo podemos trabajar juntos para alcanzar tus objetivos. Puedes escribirme a mi correo electrónico:
+					Is there a specific need that the available WordPress plugins and themes haven't been able to solve? Or maybe you have a particular improvement in mind that you'd like to implement on your website? I'm here to help you create custom and effective solutions that truly fit your needs.
+					I'm available to answer any questions and explore how we can work together to achieve your goals. You can write to me directly at my email:
 				</p>
 				<img class="contact__mail" src="<?php echo esc_url( VCNT_URI ); ?>/img/cnt.png" alt="Desarrollador WordPress, Victor Crespo - mail">
 			</div>

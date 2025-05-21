@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="col-12 col-md-9 about__text-container">
 					<p>
 					Mi nombre es Víctor Hugo Escareño Crespo, soy <b>desarrollador web especializado en WordPress</b>. 
-					Llevo poco más de cinco años trabajando con este administrador de contenido,
+					He trabajado con este administrador de contenido desde el 2019,
 					realizando mejoras a sitios ya existentes y desarrollando webs desde cero así como temas y plugins
 					personalizados.
 					</p>
