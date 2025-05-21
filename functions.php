@@ -325,7 +325,7 @@ function vcnt_register_projects_cpt() {
 		'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields' ),
 	);
 
-	register_post_type( 'projects', $args );
+	register_post_type( 'project', $args );
 }
 
 add_action( 'add_meta_boxes', 'vcnt_add_projects_meta_boxes' );
@@ -338,7 +338,7 @@ function vcnt_add_projects_meta_boxes() {
 		'vcnt_github_link',
 		__( 'GitHub Link', 'victor-crespo-net-theme' ),
 		'vcnt_render_github_link_meta_box',
-		'projects',
+		'project',
 		'normal',
 		'default'
 	);
@@ -347,7 +347,7 @@ function vcnt_add_projects_meta_boxes() {
 		'vcnt_wordpress_org_link',
 		__( 'WordPress.org Link', 'victor-crespo-net-theme' ),
 		'vcnt_render_wordpress_org_link_meta_box',
-		'projects',
+		'project',
 		'normal',
 		'default'
 	);
@@ -381,7 +381,7 @@ function vcnt_render_wordpress_org_link_meta_box( $post ) {
 	<?php
 }
 
-add_action( 'save_post_projects', 'vcnt_save_projects_meta_boxes', 10, 2 );
+add_action( 'save_post_project', 'vcnt_save_projects_meta_boxes', 10, 2 );
 
 /**
  * Save custom meta box data for Projects post type.

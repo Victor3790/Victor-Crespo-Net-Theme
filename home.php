@@ -5,6 +5,10 @@
  * @package victor-crespo-net-theme
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	die();
+}
+
 get_header();
 ?>
 	<!-- Archive -->

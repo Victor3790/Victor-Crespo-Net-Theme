@@ -19,7 +19,7 @@ $categories = get_categories(
 
 ?>
 
-<div class="sidebar pt-1 pb-1 ps-1">
+<div class="sidebar pt-1 pb-1 ps-1 mb-3">
 	<h3 class="sidebar__title">Categorías</h3>
 	<ul>
 		<?php foreach ( $categories as $category ) : ?>

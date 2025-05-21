@@ -5,6 +5,10 @@
  * @package victor-crespo-net-theme
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	die();
+}
+
 get_header();
 ?>
 	<?php if ( have_posts() ) : ?>
@@ -23,21 +27,7 @@ get_header();
 					</div>
 				</div>
 				<!-- Content -->
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-lg-9">
-							<div class="post__breadcrumbs mb-3">
-								<a class="post__breadcrumbs-link" href="<?php echo esc_url( home_url() ); ?>">Home</a> /
-								<?php the_category( ' / ', 'multiple' ); ?> /
-								<span><?php the_title(); ?></span>
-							</div>
-							<?php the_content(); ?>
-						</div>
-						<div class="col-12 col-lg-3">
-							<?php get_template_part( 'template-parts/post-categories-sidebar' ); ?>
-						</div>
-					</div>
-				</div>
+				<?php get_template_part( 'template-parts/content-' . get_post_type() ); ?>
 		<?php endwhile; ?>
 	<?php else : ?>
 		<h1>No Post</h1>

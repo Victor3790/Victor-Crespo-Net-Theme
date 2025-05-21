@@ -5,6 +5,10 @@
  * @package victor-crespo-net-theme
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	die();
+}
+
 ?>
 	<!-- Footer -->
 	<footer class="footer section pt-5 pb-3">

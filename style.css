@@ -28,6 +28,23 @@ html {
   border-left: 3px solid var(--yellow);
   padding-left: 10px; }
 
+.icon-link{
+  text-decoration: none;}
+
+.icon {
+  margin: 0; }
+
+.icon--small {
+  width: 35px;
+  height: 35px; }
+
+.icon--medium {
+  width: 50px;
+  height: 50px; }
+
+.icon--blue {
+  fill: var(--blue); }
+
 .menu {
   background-color: var(--blue);
   color: var(--white);
@@ -68,6 +85,9 @@ a.button {
 a.button:hover {
   color: var(--blue); }
 
+.sidebar__mail{
+  width: 70%;}
+
 .footer {
   background-color: var(--blue);
   color: var(--white);
@@ -89,6 +109,10 @@ a.button:hover {
 @media (min-width: 768px) {
   .section {
     margin-top: 35px; } }
+
+@media (min-width: 960px) {
+  .sidebar__mail{
+    width: 90%;}}
 
 @media (min-width: 1200px) {
   .section {

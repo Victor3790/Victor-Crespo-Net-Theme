@@ -38,5 +38,4 @@ class Vcnt_Walker_Nav_Menu extends Walker_Nav_Menu {
 	public function end_el( &$output, $item, $depth = 0, $args = array() ) {
 		$output .= '</a></li>';
 	}
-
 }

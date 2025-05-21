@@ -32,7 +32,8 @@ get_header();
 				<?php endif; ?>
 			</div>
 			<div class="col-12 col-lg-3">
-				<?php get_template_part( 'template-parts/post-categories-sidebar' ); ?>
+				<?php get_template_part( 'template-parts/links-sidebar' ); ?>
+				<?php get_template_part( 'template-parts/contact-sidebar' ); ?>
 			</div>
 		</div>
 	</div>
