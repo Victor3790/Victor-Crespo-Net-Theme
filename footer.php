@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<h2 class="title footer__title white-text"><?php esc_html_e( 'Follow me', 'vcnt' ); ?></h2>
 						</div>
 					</div>
-					<a class="footer__icon-link" href="https://www.linkedin.com/in/desarrollador-wordpress-freelance-victor-crespo" target="_blank">
+					<a class="footer__icon-link" href="https://www.linkedin.com/in/victor-crespo-46a875b3/" target="_blank">
 						<svg class="footer__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 						viewBox="-143 145 512 512" xml:space="preserve">
 							<title>Linkedin</title>
