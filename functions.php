@@ -33,6 +33,9 @@ function vcnt_setup() {
 
 	// Title tag support.
 	add_theme_support( 'title-tag' );
+	
+	// Thumbnail support.
+	add_theme_support( 'post-thumbnails' );
 
 	// Main menu.
 	register_nav_menus(
