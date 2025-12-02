@@ -13,7 +13,8 @@
   --white: #f3f3f3;
   --yellow: #fcb700;
   --blue: #032253;
-  --gray: #5f5e5e; }
+  --gray: #5f5e5e; 
+  --dark-gray: #383737;}
 
 html {
   scroll-behavior: smooth; }

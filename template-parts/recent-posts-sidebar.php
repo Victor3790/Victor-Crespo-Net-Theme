@@ -20,9 +20,9 @@ $recent_posts = wp_get_recent_posts(
 
 <div class="sidebar pt-1 pb-1 ps-1 mb-3">
 	<h3 class="sidebar__title"><?php esc_html_e( 'Recent Posts', 'vcnt' ); ?></h3>
-	<ul>
+	<ul class="sidebar__list pb-1">
 		<?php foreach ( $recent_posts as $recent_post ) : ?>
-			<li>
+			<li class="sidebar__list-item mb-3">
 				<a class="sidebar__link" href="<?php echo esc_url( get_permalink( $recent_post['ID'] ) ); ?>">
 					<?php echo esc_html( $recent_post['post_title'] ); ?>
 				</a>

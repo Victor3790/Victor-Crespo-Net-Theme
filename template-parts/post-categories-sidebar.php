@@ -21,9 +21,9 @@ $categories = get_categories(
 
 <div class="sidebar pt-1 pb-1 ps-1 mb-3">
 	<h3 class="sidebar__title"><?php esc_html_e( 'Categories', 'vcnt' ); ?></h3>
-	<ul>
+	<ul class="sidebar__list">
 		<?php foreach ( $categories as $category ) : ?>
-			<li>
+			<li class="sidebar__list-item">
 				<a class="sidebar__link" href="<?php echo esc_url( get_category_link( $category->term_id ) ); ?>">
 					<?php echo esc_html( $category->name ); ?>
 				</a>
