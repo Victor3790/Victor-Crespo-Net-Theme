@@ -17,6 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php the_category( ' / ', 'multiple' ); ?> /
 				<span><?php the_title(); ?></span>
 			</div>
+			<div class="mb-4">
+				<?php the_post_thumbnail( 'vcnt-post-featured' ); ?>
+			</div>
 			<?php the_content(); ?>
 		</div>
 		<div class="col-12 col-lg-3">

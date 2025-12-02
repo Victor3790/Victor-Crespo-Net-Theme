@@ -26,6 +26,10 @@ h3 {
 .post__breadcrumbs-link:hover {
   color: var(--gray); }
 
+.wp-post-image {
+  width: 100%;
+  height: auto; }
+
 @media (min-width: 768px) {
   .post__title {
     font-size: 3rem; } }
