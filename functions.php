@@ -33,9 +33,12 @@ function vcnt_setup() {
 
 	// Title tag support.
 	add_theme_support( 'title-tag' );
-	
+
 	// Thumbnail support.
 	add_theme_support( 'post-thumbnails' );
+
+	// Custom images sizes.
+	add_image_size( 'vcnt-post-featured', 720, 405, false );
 
 	// Main menu.
 	register_nav_menus(
