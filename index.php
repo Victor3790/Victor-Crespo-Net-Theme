@@ -14,6 +14,7 @@ get_header();
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
+				<?php if ( ! is_page() ) : // Don't display the title for static pages. ?>
 				<!-- Title -->
 				<div class="post__title-container">
 					<div class="container">
@@ -26,6 +27,7 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<?php endif; ?>
 				<!-- Content -->
 				<?php get_template_part( 'template-parts/content-' . get_post_type() ); ?>
 		<?php endwhile; ?>
